@@ -1,0 +1,161 @@
+<center>
+    <form name="weekselect" action="right_teacher_lesson_status.jsp" method="post">
+      <table cellpadding="2" cellspacing="1">
+        <tr>
+          <td colspan="3"><b>Välj en vecka</b></td>
+          <td><b>Lektionsrapportera för</b></td>
+        </tr>
+        <tr>
+          <td><a href="right_teacher_lesson_status.jsp?teachersubstitute=0&week=22"><img src="../../grafics/left.gif" alt="" /></a></td>
+          <td>
+            <select name="week" onChange="this.form.submit();">
+              <option value="27">v27</option>
+              <option value="28">v28</option>
+              <!-- ... other week options ... -->
+              <option value="23" selected="selected">v23</option>
+            </select>
+          </td>
+          <td><a href="right_teacher_lesson_status.jsp?teachersubstitute=0&week=24"><img src="../../grafics/right.gif" alt="" /></a></td>
+          <td>
+            <select id="teachersubstitute" name="teachersubstitute" tabindex="0" onchange="this.form.submit();" data-placeholder="Välj lärare...">
+              <option value="-1" label=" "></option>
+              <option value="3465">Nobach Josef</option>
+              <option value="3422">Alkbrand Susanne</option>
+              <!-- ... other teacher options ... -->
+            </select>
+            <script>
+              $("#teachersubstitute").chosen({ 
+                placeholder_text_single: "Välj lärare...", 
+                disable_search_threshold: 18, 
+                search_contains: true, 
+                single_backstroke_delete: true, 
+                width: "200px", 
+                allow_single_deselect: true, 
+                inherit_select_classes: true, 
+                include_group_label_in_selected: true
+              });
+              $(document).ready(function() {
+                $("#teachersubstitute_chosen").keydown(function(event){
+                  if(event.key === 'Enter') {
+                    event.preventDefault();
+                    return false;
+                  }
+                });
+              });
+            </script>
+          </td>
+        </tr>
+      </table>
+    </form>
+  
+    <table cellspacing="0" cellpadding="2">
+      <tr>
+        <td class="header">Schema V23 2024-06-03 - 2024-06-07</td>
+      </tr>
+      <tr>
+        <td>
+          <script language="JavaScript" src="../../script/boxover.js?rev=1.001" type="text/javascript"></script>
+          <table cellspacing="1.5" class="tab_dark">
+            <tr class="background schedulerow">
+              <td align="center" class="schedulecell"><b>Tid</b></td>
+              <td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Mån</b>&nbsp;&nbsp;</td>
+              <!-- ... other day columns ... -->
+              <td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Fre</b>&nbsp;&nbsp;</td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">8:00</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="108" class="light schedulecell"><img src="../../grafics/spacer.gif" alt="" width="20px" height="1px"></td>
+              <!-- ... other time slots ... -->
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">8:30</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="16" class="select schedulecell">
+                <div title="header=[ 8:30-9:50 MJUKVARUDESIGN] body=[Personal: JN<br />Grupp: H23TE4<br />Veckor: 33-43, 45-51, 2-7, 9-12, 14-17, 19-23<br />]">
+                  <a class="scheduleSel" href="right_teacher_lesson_status.jsp?lesson=345277&teachersubstitute=0&week=23" title=""><span>MJUKVARUDESIGN<br>8:30-9:50<br /></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">9:45</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="14" class="yellow schedulecell">
+                <div title="header=[ 9:45-10:55 PRRPRR02] body=[Personal: JN<br />Sal: H_MUSK<br />Grupp: H23PROGRAMMERING_2_2_TEKNIK_2<br />Veckor: 33-43, 45-46, 48-51, 2-7, 9-12, 14-23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=344974&teachersubstitute=0&week=23" title=""><span>PRRPRR02<br>9:45-10:55<br />H_MUSK</span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">9:55</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="16" class="yellow schedulecell">
+                <div title="header=[ 9:55-11:15 TIATIL00S] body=[Personal: JN<br />Sal: 1_PARKS<br />Grupp: H23TILLÄMPAD_PROGRAMMERING_2_IT_1<br />Veckor: 33-43, 45-51, 2-7, 9-12, 14-17, 19-23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=344948&teachersubstitute=0&week=23" title=""><span>TIATIL00S<br>9:55-11:15<br />1_PARKS</span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">12:00</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="16" class="yellow schedulecell">
+                <div title="header=[ 12:00-13:20 MJUKVARUDESIGN] body=[Personal: JN<br />Grupp: H23TE4<br />Veckor: 33-43, 45-51, 2-7, 9-12, 14-17, 19-23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=345261&teachersubstitute=0&week=23" title=""><span>MJUKVARUDESIGN<br>12:00-13:20<br /></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">12:30</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="14" class="yellow schedulecell">
+                <div title="header=[ 12:30-13:40 TIATIL00S] body=[Personal: JN<br />Sal: 1_PARKS<br />Grupp: H23TILLÄMPAD_PROGRAMMERING_2_IT_1<br />Veckor: 33-43, 45-46, 48-51, 2-7, 9-12, 14-21, 23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=344964&teachersubstitute=0&week=23" title=""><span>TIATIL00S<br>12:30-13:40<br />1_PARKS</span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">13:25</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="16" class="yellow schedulecell">
+                <div title="header=[ 13:25-14:45 TIATIL00S] body=[Personal: JN<br />Sal: F_HOPPER<br />Grupp: H23TILLÄMPAD_PROGRAMMERING_SOFTWARE<br />Veckor: 33-43, 45-51, 2-7, 9-12, 14-17, 19-21, 23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=345024&teachersubstitute=0&week=23" title=""><span>TIATIL00S<br>13:25-14:45<br />F_HOPPER</span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="background schedulerow">
+              <td width="5%" rowspan="6" class="schedulecell">13:45</td>
+              <td nowrap="nowrap" align="center" colspan="4" rowspan="14" class="yellow schedulecell">
+                <div title="header=[ 13:45-14:55 TIATIL00S] body=[Personal: JN<br />Sal: 1_PARKS<br />Grupp: H23TILLÄMPAD_PROGRAMMERING_2_IT_2<br />Veckor: 33-43, 45-46, 48-51, 2-7, 9-12, 14-21, 23<br />]">
+                  <a class="schedule" href="right_teacher_lesson_status.jsp?lesson=345143&teachersubstitute=0&week=23" title=""><span>TIATIL00S<br>13:45-14:55<br />1_PARKS</span></a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+        <td height="15" width="15" class="tab_dark">
+          <table cellpadding="0" cellspacing="1">
+            <tr>
+              <td height="13" width="13" class="green">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td nowrap="nowrap">&nbsp;Rapporterad&nbsp;</td>
+        <td height="15" width="15" class="tab_dark">
+          <table cellpadding="0" cellspacing="1">
+            <tr>
+              <td height="13" width="13" class="yellow">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td nowrap="nowrap">&nbsp;Orapporterad&nbsp;</td>
+        <td height="15" width="15" class="tab_dark">
+          <table cellpadding="0" cellspacing="1">
+            <tr>
+              <td height="13" width="13" class="background">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td nowrap="nowrap">&nbsp;Framtid&nbsp;</td>
+      </tr>
+    </table>
+  </center>
+  

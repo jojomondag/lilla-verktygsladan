@@ -1,0 +1,16 @@
+{
+    "syntaxExtractor.fileTypes": [
+        ".md",
+        ".js",
+        ".html",
+        ".json",
+        ".ttf",
+        ".png",
+        ".txt",
+        ".svg",
+        ".css",
+        ".jpg"
+    ],
+    "syntaxExtractor.clipboardDataBoxHeight": 100,
+    "syntaxExtractor.compressionLevel": 1
+}
